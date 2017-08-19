@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	function login() {
+		var idObj = document.getElementById("id");
+		alert(idObj.value);
+		var pwdObj = document.getElementById("pwd");
+		alert(pwdObj.value);
+
+	}
+</script>
+<body>
+	<form action="login.jsp">
+		안녕하세요. <br /> 
+		index.html <br /> 
+		아이디: <input type="text" id="id" name="id1" /> <br /> 
+		비밀번호: <input type="password" id="pwd" name="pwd1" value="red" /> <br />
+		<input type="submit" value="로그인" /> <br />
+	</form>
+</body>
+</html>
