@@ -5,6 +5,17 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List" %>
 <%@page import="javax.script.ScriptEngine" %>
+<%@page import="java.sql.Connection" %>
+<%@page import="java.sql.DriverManager" %>
+<%@page import="java.sql.ResultSet" %>
+<%@page import="java.sql.SQLException" %>
+<%@page import="java.sql.Statement" %>
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
