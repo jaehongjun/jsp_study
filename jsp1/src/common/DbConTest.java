@@ -10,13 +10,9 @@ public class DbConTest {
 
 	public static void main(String[] args) {
 		Connection con;
-		String url = "jdbc:mysql://localhost:3306/jsp_study";
-		String id = "root";
-		String pwd = "1234";
 		Statement st;
 		try {
-			Class.forName("org.mariadb.jdbc.Driver"); // 리플렉션? 드라이버,인터페이스를 사용하기위해 사용
-			con = DriverManager.getConnection(url, id, pwd); //DB커넥트
+			con = DbConnector.getCon();
 			System.out.println("연결 성공");
 			st = con.createStatement(); //쿼리실행전
 			ResultSet rs = st.executeQuery("select * from user");
@@ -30,6 +26,7 @@ public class DbConTest {
 			e.printStackTrace();
 			// TODO: handle exception
 		} catch (SQLException e) {
+			e.printStackTrace();
 			// TODO: handle exception
 		}
 		
